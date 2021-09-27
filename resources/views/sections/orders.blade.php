@@ -12,10 +12,16 @@
             /* float: left; */
         }
 
+        .hashpage .searchbar {
+            margin: auto;
+            /* float: left; */
+            width: 40%;
+        }
+
         .btn-glyphicon {
             padding: 8px;
             background: #ffffff;
-            margin-right: 4px;
+            /* margin-right: 4px; */
         }
 
         .icon-btn {
@@ -50,12 +56,12 @@
             cursor: pointer;
         }
 
-        .product h4 {
+        .product h5 {
             margin: 20px 0;
             white-space: inherit;
             overflow: hidden;
             text-overflow: ellipsis;
-            height: 75px;
+            /* height: 45px; */
         }
 
         .product .brdr {
@@ -93,29 +99,22 @@
 @section('content')
     <div class="hashpage">
         {{-- Add's button --}}
-        <div style="margin: auto;float: left;margin: 0 15vh 0 0;">
-            <a class="btn icon-btn btn-success" style="background-color: blueviolet;" href="/storge/addnewproduct"><span
+        {{-- <div style="margin: auto;float: left;margin: 0 15vh 0 0;">
+            <a class="btn icon-btn btn-success" style="background-color: blueviolet;" href="#"><span
                     class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Add</a>
-        </div>
+        </div> --}}
 
 
         {{-- Search bar --}}
-        <div class="input-group md-form form-sm form-2 pl-0" style="float: left;width: 70%;">
-            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-                {{-- <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
-                        aria-hidden="true"></i></span> --}}
+        <div class="searchbar">
+            <div class="input-group md-form form-sm form-2 pl-0" style="float: left;width: 70%;">
+                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    {{-- <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                            aria-hidden="true"></i></span> --}}
+                </div>
             </div>
         </div>
-        {{-- <div class="input-group">
-            <div class="form-outline">
-                <input id="search-focus" type="search" id="form1" class="form-control" />
-                <label class="form-label" for="form1">Search</label>
-            </div>
-            <button type="button" class="btn btn-primary">
-                <i class="fas fa-search"></i>
-            </button>
-        </div> --}}
         <div class="clearfix"></div>
 
     </div>
@@ -123,9 +122,25 @@
     <div class="products">
 
         <div class="product">
-            <h4>
-                Hello Supermarket Supermarket Supermarket Supermarket
-            </h4>
+            <h5>
+                No. #<strong>89</strong>
+            </h5>
+            <div class="brdr"></div>
+            <div class="productQtyContainer">
+                <p class="productqty">Date Time</p>
+                <small>100</small>
+            </div>
+
+            <div class="productCostContainer">
+                <p class="productcost">Cost</p>
+                <small>12.50</small>
+            </div>
+            {{-- <a href="#" class="btn btn-primary">See more</a> --}}
+        </div>
+        <div class="product">
+            <h5>
+                Hello Supermarket
+            </h5>
             <div class="brdr"></div>
             <div class="productQtyContainer">
                 <p class="productqty">ProductQty</p>
@@ -138,9 +153,9 @@
             </div>
         </div>
         <div class="product">
-            <h4>
+            <h5>
                 Hello Supermarket
-            </h4>
+            </h5>
             <div class="brdr"></div>
             <div class="productQtyContainer">
                 <p class="productqty">ProductQty</p>
@@ -153,24 +168,9 @@
             </div>
         </div>
         <div class="product">
-            <h4>
+            <h5>
                 Hello Supermarket
-            </h4>
-            <div class="brdr"></div>
-            <div class="productQtyContainer">
-                <p class="productqty">ProductQty</p>
-                <small>100</small>
-            </div>
-
-            <div class="productCostContainer">
-                <p class="productcost">ProductCost</p>
-                <small>12.50</small>
-            </div>
-        </div>
-        <div class="product">
-            <h4>
-                Hello Supermarket
-            </h4>
+            </h5>
             <div class="brdr"></div>
             <div class="productQtyContainer">
                 <p class="productqty">ProductQty</p>

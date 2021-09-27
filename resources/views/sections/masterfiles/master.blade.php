@@ -16,9 +16,11 @@
         html {
             font-size: 15px;
         }
-        body{
+
+        body {
             margin: 0;
         }
+
     </style>
     @yield('style')
 
@@ -38,10 +40,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/storge">Storge</a>
+                            <a class="nav-link" aria-current="page" href="/storge">Storge</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/makeorder">Make Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/inventory">Inventory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/expenses">Expenses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/orders">Orders</a>
                         </li>
                         {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
